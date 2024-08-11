@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casmart - Biggest shopping center</title>
+  <title>home</title>
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- <link rel="shortcut icon" href="./assets/images/6.svg" type="icon"> -->
+  <link rel="icon" href="./assets/images/4.png" type="image/png">
 
   <!-- 
     - custom css link
@@ -45,16 +46,16 @@
       </div>
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" alt="Casmart logo" width="130" height="31">
+        <img src="./assets/images/4.png" alt="Casmart logo" width="160" height="31">
       </a>
 
       <div class="header-actions">
 
-        <button class="header-action-btn">
+        <a href="#"><button class="header-action-btn" >
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
           <p class="header-action-label">Sign in</p>
-        </button>
+        </button></a>
 
         <button class="header-action-btn">
           <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
@@ -77,6 +78,15 @@
 
           <div class="btn-badge" aria-hidden="true">2</div>
         </button>
+        <button class="header-action-btn">
+          <ion-icon name="musical-notes-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Song off</p>
+
+          <!-- <div class="btn-badge" aria-hidden="true"></div> -->
+        </button>
+
+
 
       </div>
 
@@ -94,11 +104,12 @@
             <img src="./assets/images/logo.svg" alt="Casmart logo" width="130" height="31">
           </a>
 
-          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-            <ion-icon name="close-outline"></ion-icon>
+          <button  class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon  name="close-outline"></ion-icon>
           </button>
 
         </div>
+        <!-- <audio id="background-music" src="./assets/images/music.mp3" autoplay loop muted></audio> -->
 
         <ul class="navbar-list">
 
@@ -107,19 +118,20 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Shop</a>
+            <a href="shopping.html" class="navbar-link">Shop</a>
           </li>
+          
 
           <li>
-            <a href="#" class="navbar-link">About</a>
+            <a href="about.html" class="navbar-link">About</a>
           </li>
 
-          <li>
-            <a href="#blog" class="navbar-link">Blog</a>
-          </li>
 
           <li>
             <a href="#" class="navbar-link">Contact</a>
+          </li>
+          <li>
+            <button id="toggleButton"><a href="#" id="play-pause-btn" class="navbar-link">Song Off</a> </button>
           </li>
 
         </ul>
@@ -130,7 +142,7 @@
   </header>
 
 
-
+  <audio id="background-music" src="./assets/images/music.mp3" type="audio/mpeg" autoplay loop></audio>
 
 
   <main>
@@ -140,16 +152,16 @@
         - #HERO
       -->
 
-      <section class="hero" id="home" style="background-image: url('./assets/images/hero-banner.jpg')">
+      <section class="hero" id="home" style="background-image: url('./assets/images/3.png')">
         <div class="container">
 
           <div class="hero-content">
 
-            <p class="hero-subtitle">Fashion Everyday</p>
+            <p class="hero-subtitle">Fashion LIKE BOSS</p>
 
-            <h2 class="h1 hero-title">Unrivalled Fashion House</h2>
+            <h2 class="h1 hero-title">GOD LUXORON</h2>
 
-            <button class="btn btn-primary">Shop Now</button>
+            <a href="shopping.html"><button class="btn btn-primary">Shop Now</button></a>
 
           </div>
 
@@ -310,31 +322,35 @@
           <ul class="filter-list">
 
             <li>
-              <button class="filter-btn  active">Best Seller</button>
+              <button class="filter-btn  active" data-category="all">all</button>
             </li>
+            <a href="sungrasses.html"><li>
+              <button class="filter-btn  " data-category="best-seller">SUNGLASSES</button>
+            </li></a>
 
-            <li>
-              <button class="filter-btn">Hot Collection</button>
-            </li>
+            <a href="shirt.html"><li>
+              <button class="filter-btn" data-category="hot-collection">Shirt</button>
+            </li></a>
 
-            <li>
-              <button class="filter-btn">Trendy</button>
-            </li>
+            <a href="women.html"><li>
+              <button class="filter-btn" data-category="trendy">Women</button>
+            </li></a>
 
-            <li>
-              <button class="filter-btn">New Arrival</button>
-            </li>
+            <a href="necklace.html"><li>
+              <button class="filter-btn" data-category="new-arrival">necklace</button>
+            </li></a>
 
           </ul>
 
           <ul class="product-list">
 
-            <li>
+            <!-- <li> -->
+            <li class="product-card" data-category="best-seller">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-1.jpg" alt="Varsi Leather Bag" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
@@ -350,7 +366,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -363,7 +379,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Varsi Leather Bag</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Varsi Leather Bag</a>
                   </h3>
 
                   <div class="card-price">
@@ -375,13 +391,13 @@
 
               </div>
             </li>
-
-            <li>
+<!-- <li> -->
+            <li class="product-card" data-category="best-seller">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-2.jpg" alt="Fit Twill Shirt for Woman" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
@@ -397,7 +413,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -410,7 +426,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Fit Twill Shirt for Woman</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Fit Twill Shirt for Woman</a>
                   </h3>
 
                   <div class="card-price">
@@ -421,12 +437,12 @@
               </div>
             </li>
 
-            <li>
+            <li class="product-card" data-category="best-seller">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-3.jpg" alt="Grand Atlantic Chukka Boots" loading="lazy"
                       width="800" height="1034" class="w-100">
                   </a>
@@ -440,7 +456,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -453,7 +469,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Grand Atlantic Chukka Boots</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Grand Atlantic Chukka Boots</a>
                   </h3>
 
                   <div class="card-price">
@@ -463,13 +479,13 @@
 
               </div>
             </li>
-
-            <li>
+<!-- <li> -->
+            <li class="product-card" data-category="best-seller">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-4.jpg" alt="Women's Faux-Trim Shirt" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
@@ -483,7 +499,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -496,7 +512,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Women's Faux-Trim Shirt</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Women's Faux-Trim Shirt</a>
                   </h3>
 
                   <div class="card-price">
@@ -507,12 +523,13 @@
               </div>
             </li>
 
-            <li>
+
+            <li class="product-card" data-category="hot-collection">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-5.jpg" alt="Soft Touch Interlock Polo" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
@@ -526,7 +543,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -539,7 +556,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Soft Touch Interlock Polo</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Soft Touch Interlock Polo</a>
                   </h3>
 
                   <div class="card-price">
@@ -550,12 +567,12 @@
               </div>
             </li>
 
-            <li>
+            <li class="product-card" data-category="hot-collection">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-6.jpg" alt="Casmart Smart Watch" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
@@ -569,7 +586,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -582,7 +599,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Casmart Smart Watch</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Casmart Smart Watch</a>
                   </h3>
 
                   <div class="card-price">
@@ -595,12 +612,12 @@
               </div>
             </li>
 
-            <li>
+            <li class="product-card" data-category="hot-collection">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-7.jpg" alt="Casmart Smart Glass" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
@@ -614,7 +631,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -627,7 +644,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Casmart Smart Glass</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Casmart Smart Glass</a>
                   </h3>
 
                   <div class="card-price">
@@ -639,13 +656,12 @@
 
               </div>
             </li>
-
-            <li>
+            <li class="product-card" data-category="trendy">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-8.jpg" alt="Cotton Shirt for Men" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
@@ -659,7 +675,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -672,7 +688,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Cotton Shirt for Men</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Cotton Shirt for Men</a>
                   </h3>
 
                   <div class="card-price">
@@ -685,12 +701,12 @@
               </div>
             </li>
 
-            <li>
+            <li class="product-card" data-category="trendy">
               <div class="product-card">
 
                 <figure class="card-banner">
 
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/product-9.jpg" alt="Double-breasted Blazer" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
@@ -704,7 +720,7 @@
                     <button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
+                      <p>Buy Now</p>
                     </button>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
@@ -717,7 +733,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Double-breasted Blazer</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Double-breasted Blazer</a>
                   </h3>
 
                   <div class="card-price">
@@ -728,7 +744,7 @@
               </div>
             </li>
 
-            <li>
+            <li class="product-card" data-category="new-arrival">
               <div class="product-card">
 
                 <figure class="card-banner">
@@ -744,13 +760,13 @@
 
                     <button class="card-action-btn" aria-label="Quick view">
                       <ion-icon name="eye-outline"></ion-icon>
-                    </button>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"></button></a>
 
-                    <button class="card-action-btn cart-btn">
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"><button class="card-action-btn cart-btn">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
-                      <p>Add to Cart</p>
-                    </button>
+                      <p>Buy Now</p>
+                    </button></a>
 
                     <button class="card-action-btn" aria-label="Add to Whishlist">
                       <ion-icon name="heart-outline"></ion-icon>
@@ -762,7 +778,7 @@
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Ribbed Cotton Bodysuits</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Ribbed Cotton Bodysuits</a>
                   </h3>
 
                   <div class="card-price">
@@ -775,7 +791,7 @@
 
           </ul>
 
-          <button class="btn btn-outline">View All Products</button>
+          <a href="shopping.html"><button class="btn btn-outline">View All Products</button></a>
 
         </div>
       </section>
@@ -838,7 +854,7 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="#">
+                  <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">
                     <img src="./assets/images/blog-2.jpg" alt="Holiday Home Decoration I’ve Recently Ordered"
                       loading="lazy" width="1020" height="700" class="w-100">
                   </a>
@@ -851,13 +867,13 @@
                     <li class="card-meta-item">
                       <ion-icon name="folder-open-outline"></ion-icon>
 
-                      <a href="#" class="card-meta-link">Fashion</a>
+                      <a href="https://forms.gle/2bNEKAHNrYp2DwSv7" class="card-meta-link">Fashion</a>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="time-outline"></ion-icon>
 
-                      <a href="#" class="card-meta-link">
+                      <a href="https://forms.gle/2bNEKAHNrYp2DwSv7" class="card-meta-link">
                         <time datetime="2021-03-31">31 Mar 2021</time>
                       </a>
                     </li>
@@ -865,7 +881,7 @@
                   </ul>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Holiday Home Decoration I’ve Recently Ordered</a>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7">Holiday Home Decoration I’ve Recently Ordered</a>
                   </h3>
 
                 </div>
@@ -976,11 +992,11 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Casmart logo">
+            <img src="./assets/images/4.png" alt="Casmart logo" style="height: 150px; width: 300px;">
           </a>
 
           <p class="footer-text">
-            Casmart is a fashion theme for presents a complete wardrobe of uniquely crafted Ethnic Wear, Casuals, Edgy
+            god luxonor is a fashion theme for presents a complete wardrobe of uniquely crafted Ethnic Wear, Casuals, Edgy
             Denims, &
             Accessories inspired from the most contemporary
           </p>
@@ -1000,7 +1016,7 @@
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/godluxonor_shop?igsh=cGxyaTk0dDdid203&utm_source=qr" class="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
@@ -1022,7 +1038,7 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Company</a>
+            <a href="about.html" class="footer-link">About Company</a>
           </li>
 
           <li>
@@ -1054,27 +1070,27 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Handbags & Wallets</a>
+            <a href="shopping.html" class="footer-link">Handbags & Wallets</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Women's Clothing</a>
+            <a href="shopping.html" class="footer-link">Women's Clothing</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Plus Sizes</a>
+            <a href="shopping.html" class="footer-link">Plus Sizes</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Complete Your Look</a>
+            <a href="shopping.html" class="footer-link">Complete Your Look</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Baby Corner</a>
+            <a href="shopping.html" class="footer-link">Baby Corner</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Man & Woman Shoe</a>
+            <a href="shopping.html" class="footer-link">Man & Woman Shoe</a>
           </li>
 
         </ul>

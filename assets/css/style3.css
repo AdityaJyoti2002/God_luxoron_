@@ -1,0 +1,44 @@
+.shop-item .item-in-cart .in-cart .quantity:before {
+    content: "You will ";
+  }
+  .shop-item .item-in-cart .in-cart .quantity:after {
+    content: " earn"
+  }
+
+.card{
+  width: 250px;
+  height: 400px;
+}
+.portrait{
+  width: 200px;
+}
+.title{
+  position: relative;
+  top: 270px;
+}
+@media (max-width: 767px){
+  .card{
+    width: 350px;
+    height: 300px;
+
+  }
+  .item-in-cart{
+    position: relative;
+    top: 190px;
+  }
+  .price{
+    position: relative;
+    top: 190px;
+  }
+}
+/* .close-btn{
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f00;
+  cursor: pointer;
+} */

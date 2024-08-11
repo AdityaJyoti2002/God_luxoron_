@@ -505,9 +505,10 @@ h3 > a { color: inherit; }
 }
 
 .filter-btn {
-  color: inherit;
+  /* color: inherit; */
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
+  
 }
 
 .filter-btn.active { color: var(--eerie-black); }
@@ -1261,4 +1262,12 @@ h3 > a { color: inherit; }
 
   .footer-bottom .container { justify-content: space-between; }
 
+}
+
+
+
+/* mystyle */
+
+embed{
+  display: ;
 }

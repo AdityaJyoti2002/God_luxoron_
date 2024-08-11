@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>staff</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style2.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+    
+          <div class="overlay" data-overlay></div>
+    
+          <div class="header-search">
+            <input type="search" name="search" placeholder="Search Product..." class="input-field">
+    
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/4.png" alt="Casmart logo" width="160" height="31">
+          </a>
+    
+          <div class="header-actions">
+    
+            <button class="header-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Sign in</p>
+            </button>
+    
+            <button class="header-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Search</p>
+            </button>
+    
+            <button class="header-action-btn">
+              <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Cart</p>
+    
+              <div class="btn-badge green" aria-hidden="true">3</div>
+            </button>
+    
+            <button class="header-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Wishlisht</p>
+    
+              <div class="btn-badge" aria-hidden="true">2</div>
+            </button>
+            <button class="header-action-btn">
+              <ion-icon name="musical-notes-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Song off</p>
+    
+              <!-- <div class="btn-badge" aria-hidden="true"></div> -->
+            </button>
+    
+    
+    
+          </div>
+    
+          <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" alt="Casmart logo" width="130" height="31">
+              </a>
+    
+              <button  class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                <ion-icon  name="close-outline"></ion-icon>
+              </button>
+    
+            </div>
+            <!-- <audio id="background-music" src="./assets/images/music.mp3" autoplay loop muted></audio> -->
+    
+            <ul class="navbar-list">
+    
+              <li>
+                <a href="#home" class="navbar-link">Home</a>
+              </li>
+    
+              <li>
+                <a href="shopping.html" class="navbar-link">Shop</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link">About</a>
+              </li>
+    
+              <li>
+                <a href="#blog" class="navbar-link">Blog</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link">Contact</a>
+              </li>
+              <li>
+                <button id="toggleButton"><a href="#" id="play-pause-btn" class="navbar-link">Song Off</a> </button>
+              </li>
+    
+            </ul>
+    
+          </nav>
+    
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Shirt</h1>
+            <ul class="products">
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="#">
+                        <span class="title">Lorem Ipsum Dolor</span><br/>
+                        <div class="image">
+                          <img src="http://lorempixel.com/gray/640/480/abstract/" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">$9.99</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 200</span></span>
+                      <button class="btn btn-sm btn-success add-to-cart"> link</button>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+      
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="#">
+                        <span class="title">Consectetur Adipiscing Elit</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="http://lorempixel.com/gray/480/640/abstract/" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">$13.98</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 200</span></span>
+                      <button class="btn btn-sm btn-success add-to-cart"> link</button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+      
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="#">
+                        <span class="title">Vivamus Vitae Tellus</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="http://lorempixel.com/gray/600/800/abstract/" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">$52.25</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 200</span></span>
+                      <button class="btn btn-sm btn-danger remove-from-cart">- link</button>
+                      <!-- <button class="btn btn-sm btn-success add-to-cart">+ More</button> -->
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+      
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="#">
+                        <span class="title">Quisque a Enim Pretium</span><br/>
+                        <div class="image">
+                          <img src="http://lorempixel.com/gray/640/480/abstract/" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">$22.98</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 200</span></span>
+                      <button class="btn btn-sm btn-success add-to-cart">link</button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="#">
+                        <span class="title">Aliquam Tristique Mattis Eros</span><br/>
+                        <div class="image">
+                          <img src="http://lorempixel.com/gray/640/480/abstract/" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">$22.98</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 200</span></span>
+                      <button class="btn btn-sm btn-success add-to-cart">link</button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="#">
+                        <span class="title">Quisque a Enim Pretium</span><br/>
+                        <div class="image">
+                          <img src="http://lorempixel.com/gray/640/480/abstract/" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">$22.98</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 200</span></span>
+                      <button class="btn btn-sm btn-success add-to-cart">link</button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

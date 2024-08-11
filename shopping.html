@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <link rel="icon" href="./assets/images/4.png" type="image/png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style2.css">
+  <link rel="stylesheet" href="./assets/css/style3.css">
+  
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+    
+          <div class="overlay" data-overlay></div>
+    
+          <div class="header-search">
+            <input type="search" name="search" placeholder="Search Product..." class="input-field">
+    
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/4.png" alt="Casmart logo" width="160" height="31">
+          </a>
+    
+          <div class="header-actions">
+    
+            <button class="header-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Sign in</p>
+            </button>
+    
+            <button class="header-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Search</p>
+            </button>
+    
+            <button class="header-action-btn">
+              <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Cart</p>
+    
+              <div class="btn-badge green" aria-hidden="true">3</div>
+            </button>
+    
+            <button class="header-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Wishlisht</p>
+    
+              <div class="btn-badge" aria-hidden="true">2</div>
+            </button>
+            <button class="header-action-btn">
+              <ion-icon name="musical-notes-outline" aria-hidden="true"></ion-icon>
+    
+              <p class="header-action-label">Song off</p>
+    
+              <!-- <div class="btn-badge" aria-hidden="true"></div> -->
+            </button>
+    
+    
+    
+          </div>
+    
+          <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" alt="Casmart logo" width="130" height="31">
+              </a>
+    
+              <button  class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                <ion-icon  name="close-outline"></ion-icon>
+              </button>
+    
+            </div>
+            <!-- <audio id="background-music" src="./assets/images/music.mp3" autoplay loop muted></audio> -->
+    
+            <ul class="navbar-list">
+    
+              <li>
+                <a href="index.html" class="navbar-link">Home</a>
+              </li>
+    
+              <li>
+                <a href="shopping.html" class="navbar-link">Shop</a>
+              </li>
+    
+              <li>
+                <a href="about.html" class="navbar-link">About</a>
+              </li>
+    
+              
+    
+              <li>
+                <a href="#" class="navbar-link">Contact</a>
+              </li>
+              <li>
+                <button id="toggleButton"><a href="#" id="play-pause-btn" class="navbar-link">Song Off</a> </button>
+              </li>
+    
+            </ul>
+    
+          </nav>
+    
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Result</h1>
+            <ul class="products">
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.22.39 AM.png" download="">
+                        <span class="title">Fancy Women Casual Shoes</span><br/>
+                        <div class="image">
+                          <img  src="assets/images/Screenshot 2024-08-11 at 12.22.39 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 249</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 40</span></span>
+                      <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"><button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.25.48 AM.png" download="">
+                        <span class="title">Pearl Work Necklace Artificial Stones Gold Plated Ethnic Casual Jewellery Set</span><br/>
+                        <div class="image">
+                          <img src="assets/images/Screenshot 2024-08-11 at 12.25.48 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 314</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 60</span></span>
+                      <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"><button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+      
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.14.35 AM.png" download="">
+                        <span class="title">Walking Shoes Printed Canvas Men's Sports Shoes</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.14.35 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 492</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 65</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.31.39 AM.png" download="">
+                        <span class="title">Pearl Work Necklace and Earrings Cubic Zirconia/American Diamond Gold Plated Ethnic Party Jewellery Set</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.31.39 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 263</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 40</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.33.53 AM.png" download="">
+                        <span class="title">Minimal Necklace and Earrings Cubic Zirconia/American Diamond Silver Plated Western Party Jewellery Set</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.33.53 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 299</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 60</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.35.39 AM.png" download="">
+                        <span class="title">Minimal Necklace and Earrings Cubic Zirconia/American Diamond Gold Plated Ethnic Party Jewellery Set</span><br/>
+                        <!-- <span class="price">Rs. 268</span> -->
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.35.39 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 268</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 45</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.41.17 AM.png" download="">
+                        <span class="title">Silver Metal Round , UV Protected Sunglasses (Pack of 1)</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.41.17 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 265</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 50</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.43.26 AM.png" download="">
+                        <span class="title">Wearwise rectangular mc stan rimless sunglasses for men and women)</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.43.26 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 350</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 60</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.56.36 AM.png" download="">
+                        <span class="title">Popcorn Shirts #Half Sleeve Shirt For Men</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.56.36 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 423</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 80</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.59.36 AM.png" download="">
+                        <span class="title">Imported Popcorn Stylish Shirts For Mens And Female</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.59.36 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 439</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 80</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 1.02.37 AM.png" download="">
+                        <span class="title">men's retro shirt</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 1.02.37 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 462</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 70</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.51.55 AM.png" download="">
+                        <span class="title">Classic Retro Men Shirts</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.51.55 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 410</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 60</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.49.12 AM.png" download="">
+                        <span class="title">Men Silver Metal Square , UV Protected Mc Stan Sunglasses (Pack of 1)</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.49.12 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 361</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 60</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart"> link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+      
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.11.53 AM.png" download="">
+                        <span class="title">Running Shoes Solid Canvas Men's Sports Shoes</span><br/>
+                        <div class="image">
+                          <img class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.11.53 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 372</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 50</span></span>
+                      <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"><button class="btn btn-sm btn-danger remove-from-cart">- link</button></a>
+                      <!-- <button class="btn btn-sm btn-success add-to-cart">+ More</button> -->
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+      
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-11 at 12.04.04 AM.png" download="">
+                        <span class="title">Running Shoes Solid Mesh Men's Sports Shoes</span><br/>
+                        <div class="image">
+                          <img  class="portrait" src="assets/images/Screenshot 2024-08-11 at 12.04.04 AM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 414</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 50</span></span>
+                     <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"> <button class="btn btn-sm btn-success add-to-cart">link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-10 at 11.41.31 PM.png" download="">
+                        <span class="title">Latest Sports Shoes For Men</span><br/>
+                        <div class="image">
+                          <img  class="portrait" src="assets/images/Screenshot 2024-08-10 at 11.41.31 PM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 531</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 70</span></span>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"><button class="btn btn-sm btn-success add-to-cart">link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-10 at 11.41.31 PM.png" download="">
+                        <span class="title">Latest Sports Shoes For Men</span><br/>
+                        <div class="image">
+                          <img  class="portrait" src="assets/images/Screenshot 2024-08-10 at 11.41.31 PM.png" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 531</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 70</span></span>
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"><button class="btn btn-sm btn-success add-to-cart">link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li>
+              
+              <!-- <li class="product shop-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card layer-1">
+                  <div class="content">
+                    <div class="link">
+                      <a href="assets/images/Screenshot 2024-08-10 at 11.47.42 PM.png" download="">
+                        <span class="title">Stylish Trending shoes for Men/span><br/>
+                        <div class="image">
+                          <img  class="portrait" src="assets/images/Screenshot 2024-08-10 at 11.47.42 PM.png" class="images" />
+                        </div>
+                      </a>
+                    </div>
+                    <span class="price">Rs. 377</span>
+                    <div class="item-in-cart">
+                      <span class="in-cart"><span class="quantity">Rs. 50</span></span>
+                
+                    <a href="https://forms.gle/2bNEKAHNrYp2DwSv7"><button class="btn btn-sm btn-success add-to-cart">link</button></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </li> -->
+
+            </ul>
+            <!-- <img class="big_image"src="assets/images/Screenshot 2024-08-10 at 11.47.42 PM.png" alt=""> -->
+            <!-- <button onclick="downloadAllImages()" class="btn btn-sm btn-success add-to-cart btn1">Download All Images</button> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="popup">
+        <div class="topbar">
+          <p class="image-name">img</p>
+          <span class="close-btn"></span>
+        </div>
+        <img src="assets/images/Screenshot 2024-08-10 at 11.47.42 PM.png" class="large-image" alt="">
+        <h1 class="index">1</h1>
+      </div> -->
+
+
+
+
+
+
+      <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
